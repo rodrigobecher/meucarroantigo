@@ -1,0 +1,69 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+.fundo {
+  background-color: #616164;
+}
+.v-sidebar-menu {
+  --vsm-primary-color: #4285f4;
+  --vsm-base-bg: #2a2a2e;
+  --vsm-item-color: #fff;
+  --vsm-item-active-color:;
+  --vsm-item-active-bg:;
+  --vsm-item-active-line-color: var(--vsm-primary-color);
+  --vsm-item-open-color: #fff;
+  --vsm-item-hover-color:;
+  --vsm-item-open-bg: var(--vsm-primary-color);
+  --vsm-item-hover-bg: rgba(30, 30, 33, 0.5);
+  --vsm-icon-color: var(--vsm-item-color);
+  --vsm-icon-bg: #1e1e21;
+  --vsm-icon-active-color:;
+  --vsm-icon-active-bg:;
+  --vsm-icon-open-color:;
+  --vsm-icon-open-bg:;
+  --vsm-mobile-item-color: #fff;
+  --vsm-mobile-item-bg: var(--vsm-primary-color);
+  --vsm-mobile-icon-color: var(--vsm-mobile-item-color);
+  --vsm-mobile-icon-bg: transparent;
+  --vsm-dropdown-bg: #36363b;
+  --vsm-header-item-color: rgba(255, 255, 255, 0.7);
+  --vsm-toggle-btn-color: #fff;
+  --vsm-toggle-btn-bg: #1e1e21;
+  --vsm-item-font-size: 16px;
+  --vsm-item-line-height: 35px;
+  --vsm-item-padding: 10px 15px;
+  --vsm-icon-height: 35px;
+  --vsm-icon-width: 35px;
+}
